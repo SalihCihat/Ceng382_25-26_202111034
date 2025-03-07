@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High School DxD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+        
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: 'UnifrakturMaguntia', cursive;
+            overflow: hidden;
+            background-color: black; 
+        }
+
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('rias.jpg') no-repeat center center fixed; /* Burada your-photo.jpg'yi kendi resminizin adıyla değiştirin */
+            background-size: cover;
+            opacity: 1; 
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .background-gif {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('background.gif') no-repeat center center fixed; /* GIF'inizi burada ekleyin */
+            background-size: cover;
+            opacity: 0; 
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        .background.show {
+            opacity: 0; 
+        }
+
+        .background-gif.show {
+            opacity: 1; 
+        }
+
+        .login-container {
+            position: absolute;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 20px red;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 0.5s, opacity 0.5s ease-in-out;
+        }
+
+        .login-container.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid red;
+            background: black;
+            color: white;
+            text-align: center;
+            font-family: 'UnifrakturMaguntia', cursive;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .login-input:hover, .login-input:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px red, 0 0 30px rgba(255, 0, 0, 0.6);
+            outline: none;
+        }
+
+        .login-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            font-family: 'UnifrakturMaguntia', cursive;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .login-btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            transition: 0.3s;
+            transform: translate(-50%, -50%) scale(0);
+            border-radius: 50%;
+        }
+
+        .login-btn:hover::before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .login-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px red, 0 0 40px rgba(255, 0, 0, 0.7);
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'UnifrakturMaguntia', cursive;
+            border: 4px solid red;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer; 
+            z-index: 10;
+        }
+
+        .logo:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 15px red, 0 0 25px rgba(255, 0, 0, 0.7);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo" onclick="showLogin()">EXECUTE</div>
+    <div class="background"></div>
+    <div class="background-gif"></div>
+    <div class="login-container">
+        <h1>Welcome to DxD</h1>
+        <input type="text" class="login-input" placeholder="Username">
+        <input type="password" class="login-input" placeholder="Password">
+        <button class="login-btn">Login</button>
+    </div>
+    <script>
+        function showLogin() {
+            document.querySelector('.login-container').classList.add('show');
+            document.querySelector('.background').classList.add('show');
+            document.querySelector('.background-gif').classList.add('show');
+            document.querySelector('.logo').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
