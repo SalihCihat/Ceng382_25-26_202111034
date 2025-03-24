@@ -139,6 +139,21 @@
         <button class="login-btn" onclick="validateLogin()">Login</button>
     </div>
     <script>
+        let loginData = []; 
+
+        function validateLogin() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+
+            if (username.trim() === "" || password.trim() === "") {
+                console.log("Username or password cannot be empty.");
+                return;
+            }
+
+            loginData.push({ username: username, password: password });
+
+            console.log("Stored Login Data:", loginData);
+        }
 
         function toggleLogin() {
             let loginContainer = document.getElementById('loginForm');
