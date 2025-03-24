@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Information</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');
+
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: 'UnifrakturMaguntia', cursive;
+            background: url('rias1.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        h1 {
+            color: red;
+        }
+
+        .form-container {
+            width: 40%;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px red;
+            box-sizing: border-box; /* Ensures the padding is included in width calculation */
+        }
+
+        .form-container input,
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid red;
+            background: black;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'UnifrakturMaguntia', cursive;
+            box-sizing: border-box; /* Ensures consistent sizing */
+        }
+
+        .form-container input:focus,
+        .form-container button:focus {
+            border-color: white;
+            background-color: rgba(255, 0, 0, 0.2);
+        }
+
+        .form-container button {
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .table-container {
+            margin-top: 30px;
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 10px red;
+            color: white;
+            background-color: black;
+            box-sizing: border-box; /* Ensures consistent sizing */
+        }
+
+        .table-container th,
+        .table-container td {
+            padding: 12px;
+            border: 1px solid white;
+            text-align: left;
+            font-family: 'UnifrakturMaguntia', cursive;
+            box-sizing: border-box; /* Ensures consistent sizing */
+        }
+
+        .table-container th {
+            background-color: red;
+            color: white;
+        }
+
+        .table-container tr:hover {
+            background-color: rgba(255, 0, 0, 0.3);
+        }
+
+        .highlighted {
+            background-color: rgba(255, 255, 0, 0.5) !important;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Class Information</h1>
+
+    <div class="form-container">
+        <input type="text" id="className" placeholder="Class Name">
+        <input type="number" id="numPeople" placeholder="Number of People">
+        <input type="text" id="description" placeholder="Description">
+        <button onclick="addClass()">Add Class</button>
+    </div>
+
+    <div>
+        <table class="table-container" id="classTable">
+            <thead>
+                <tr>
+                    <th>Class Name</th>
+                    <th>Number of People</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function addClass() {
+            const className = document.getElementById('className').value;
+            const numPeople = document.getElementById('numPeople').value;
+            const description = document.getElementById('description').value;
+
+            if (!className || !numPeople || !description) {
+                alert("All fields must be filled!");
+                return;
+            }
+
+            const table = document.getElementById('classTable').getElementsByTagName('tbody')[0];
+            const newRow = table.insertRow();
+
+            const cell1 = newRow.insertCell(0);
+            const cell2 = newRow.insertCell(1);
+            const cell3 = newRow.insertCell(2);
+
+            cell1.textContent = className;
+            cell2.textContent = numPeople;
+            cell3.textContent = description;
+
+            cell1.style.fontFamily = 'UnifrakturMaguntia', 'cursive';
+            cell2.style.fontFamily = 'UnifrakturMaguntia', 'cursive';
+            cell3.style.fontFamily = 'UnifrakturMaguntia', 'cursive';
+
+            document.getElementById('className').value = '';
+            document.getElementById('numPeople').value = '';
+            document.getElementById('description').value = '';
+        }
+
+        document.getElementById('classTable').addEventListener('click', function(event) {
+            if (event.target.tagName === 'TD') {
+                const row = event.target.parentElement;
+                console.log(`Row clicked: Class Name: ${row.cells[0].textContent}, People: ${row.cells[1].textContent}, Description: ${row.cells[2].textContent}`);
+                row.classList.toggle('highlighted');
+            } else {
+                const allEntries = Array.from(document.querySelectorAll('.table-container tbody tr')).map(row => ({
+                    className: row.cells[0].textContent,
+                    numPeople: row.cells[1].textContent,
+                    description: row.cells[2].textContent
+                }));
+                console.log("Table clicked, all entries:", allEntries);
+            }
+        });
+
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('focus', function() {
+                input.style.backgroundColor = "rgba(255, 0, 0, 0.2)";
+            });
+            input.addEventListener('blur', function() {
+                input.style.backgroundColor = "black";
+            });
+            input.addEventListener('keyup', function() {
+                if (!input.value.trim()) {
+                    input.style.border = "2px solid red";
+                } else {
+                    input.style.border = "2px solid green";
+                }
+            });
+        });
+
+        document.getElementById('classTable').addEventListener('dblclick', function(event) {
+            if (event.target.tagName === 'TD') {
+                const row = event.target.parentElement;
+                alert(`Detailed Info: Class Name: ${row.cells[0].textContent}, People: ${row.cells[1].textContent}, Description: ${row.cells[2].textContent}`);
+                row.remove();
+            }
+        });
+    </script>
+</body>
+</html>
