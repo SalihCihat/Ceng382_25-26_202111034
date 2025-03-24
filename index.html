@@ -139,17 +139,7 @@
         <button class="login-btn" onclick="validateLogin()">Login</button>
     </div>
     <script>
-        function validateLogin() {
-            let username = document.getElementById('username').value;
-            let password = document.getElementById('password').value;
-            
-            if (username === "admin" && password === "admin") {
-                window.location.href = "table.html";
-            } else {
-                alert("Invalid credentials");
-            }
-        }
-
+        
         function toggleLogin() {
             let loginContainer = document.getElementById('loginForm');
             loginContainer.classList.toggle('show');
