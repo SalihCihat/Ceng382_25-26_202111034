@@ -1,0 +1,45 @@
+﻿@page
+@model lab5.Pages.IndexModel
+@{
+    ViewData["Title"] = "Class Information";
+}
+
+<h1>Class Information</h1>
+
+<!-- Sınıf Ekleme Formu -->
+<div>
+    <form method="post">
+        <input asp-for="NewClass.ClassName" placeholder="Class Name" required />
+        <input asp-for="NewClass.StudentCount" type="number" placeholder="Number of People" required />
+        <input asp-for="NewClass.Description" placeholder="Description" required />
+        <button type="submit" asp-page-handler="Add">Add Class</button>
+    </form>
+</div>
+
+<!-- Sınıfları Listeleme ve Silme -->
+<table>
+    <thead>
+        <tr>
+            <th>Class Name</th>
+            <th>Number of People</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.ClassList)
+        {
+            <tr>
+                <td>@item.ClassName</td>
+                <td>@item.StudentCount</td>
+                <td>@item.Description</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" asp-page-handler="Delete">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
