@@ -1,45 +1,89 @@
 ﻿@page
 @model lab5.Pages.IndexModel
+
 @{
-    ViewData["Title"] = "Class Information";
+    ViewData["Title"] = "Class Management";
 }
 
-<h1>Class Information</h1>
+<!-- Bootstrap Layout -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Form Section (Left) -->
+        <div class="col-md-5">
+            <h3>@(Model.EditId.HasValue ? "Edit Class" : "Add New Class")</h3>
+            <form method="post">
+                <input type="hidden" asp-for="NewClass.Id" />
 
-<!-- Sınıf Ekleme Formu -->
-<div>
-    <form method="post">
-        <input asp-for="NewClass.ClassName" placeholder="Class Name" required />
-        <input asp-for="NewClass.StudentCount" type="number" placeholder="Number of People" required />
-        <input asp-for="NewClass.Description" placeholder="Description" required />
-        <button type="submit" asp-page-handler="Add">Add Class</button>
-    </form>
+                <div class="mb-3">
+                    <label class="form-label">Class Name</label>
+                    <input type="text" class="form-control" asp-for="NewClass.ClassName" />
+                    <span class="text-danger" asp-validation-for="NewClass.ClassName"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Student Count</label>
+                    <input type="number" class="form-control" asp-for="NewClass.StudentCount" />
+                    <span class="text-danger" asp-validation-for="NewClass.StudentCount"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" asp-for="NewClass.Description"></textarea>
+                    <span class="text-danger" asp-validation-for="NewClass.Description"></span>
+                </div>
+
+                @if (Model.EditId.HasValue)
+                {
+                    <button type="submit" class="btn btn-warning" asp-page-handler="Update" asp-route-id="@Model.EditId">Update</button>
+                    <a href="/" class="btn btn-secondary">Cancel</a>
+                }
+                else
+                {
+                    <button type="submit" class="btn btn-primary" asp-page-handler="Add">Add Class</button>
+                }
+            </form>
+        </div>
+
+        <!-- Data Table Section (Right) -->
+        <div class="col-md-7">
+            <h3>Class List</h3>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Class Name</th>
+                        <th>Student Count</th>
+                        <th>Description</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in lab5.Pages.IndexModel.ClassList)
+                    {
+                        <tr>
+                            <td>@item.Id</td>
+                            <td>@item.ClassName</td>
+                            <td>@item.StudentCount</td>
+                            <td>@item.Description</td>
+                            <td>
+                                <form method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <button type="submit" class="btn btn-info btn-sm" asp-page-handler="Edit" asp-route-id="@item.Id">Edit</button>
+                                </form>
+
+                                <form method="post" class="d-inline">
+                                    <input type="hidden" name="id" value="@item.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm" asp-page-handler="Delete">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 
-<!-- Sınıfları Listeleme ve Silme -->
-<table>
-    <thead>
-        <tr>
-            <th>Class Name</th>
-            <th>Number of People</th>
-            <th>Description</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model.ClassList)
-        {
-            <tr>
-                <td>@item.ClassName</td>
-                <td>@item.StudentCount</td>
-                <td>@item.Description</td>
-                <td>
-                    <form method="post">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" asp-page-handler="Delete">Delete</button>
-                    </form>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
