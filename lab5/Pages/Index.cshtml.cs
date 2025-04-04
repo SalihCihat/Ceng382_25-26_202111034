@@ -1,47 +1,63 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
+using lab5.Models;
 
 namespace lab5.Pages
 {
     public class IndexModel : PageModel
     {
-        private static List<ClassInformationModel> _classList = new List<ClassInformationModel>(); // Kaydedilen veriler
-        public List<ClassInformationModel> ClassList => _classList;
+        // Statik liste, uygulama çalıştığı sürece verileri saklar
+        public static List<ClassInformationModel> ClassList { get; set; } = new List<ClassInformationModel>();
 
         [BindProperty]
-        public ClassInformationModel NewClass { get; set; } = new();
+        public ClassInformationModel ClassInfo { get; set; } = new();
 
         public void OnGet() { }
 
         public IActionResult OnPostAdd()
         {
             if (!ModelState.IsValid)
-            {
                 return Page();
-            }
 
-            NewClass.Id = _classList.Count + 1; // ID otomatik artırma
-            _classList.Add(NewClass);
-            return RedirectToPage(); // Sayfa yenilenince veriler kaybolmayacak
+            // Otomatik artan ID
+            ClassInfo.Id = ClassList.Count > 0 ? ClassList.Max(c => c.Id) + 1 : 1;
+            ClassList.Add(ClassInfo);
+            return RedirectToPage();
         }
 
         public IActionResult OnPostDelete(int id)
         {
-            var classToRemove = _classList.Find(c => c.Id == id);
-            if (classToRemove != null)
+            var item = ClassList.FirstOrDefault(c => c.Id == id);
+            if (item != null)
+                ClassList.Remove(item);
+
+            return RedirectToPage();
+        }
+
+        public IActionResult OnPostEdit(int id)
+        {
+            var item = ClassList.FirstOrDefault(c => c.Id == id);
+            if (item != null)
+                ClassInfo = new ClassInformationModel
+                {
+                    Id = item.Id,
+                    ClassName = item.ClassName,
+                    StudentCount = item.StudentCount,
+                    Description = item.Description
+                };
+            return Page();
+        }
+
+        public IActionResult OnPostUpdate()
+        {
+            var item = ClassList.FirstOrDefault(c => c.Id == ClassInfo.Id);
+            if (item != null)
             {
-                _classList.Remove(classToRemove);
+                item.ClassName = ClassInfo.ClassName;
+                item.StudentCount = ClassInfo.StudentCount;
+                item.Description = ClassInfo.Description;
             }
             return RedirectToPage();
         }
-    }
-
-    public class ClassInformationModel
-    {
-        public int Id { get; set; }
-        public string ClassName { get; set; }
-        public int StudentCount { get; set; }
-        public string Description { get; set; }
     }
 }
