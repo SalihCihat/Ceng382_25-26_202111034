@@ -8,24 +8,31 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/home/madscientist/.nuget/packages/": {}
+    "C:\\Users\\salih\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/lab5.csproj",
+      "projectUniqueName": "C:\\Users\\salih\\Desktop\\ceng382\\Ceng382_25-26_202111034\\lab5\\lab5.csproj",
       "projectName": "lab5",
-      "projectPath": "/home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/lab5.csproj",
-      "packagesPath": "/home/madscientist/.nuget/packages/",
-      "outputPath": "/home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/",
+      "projectPath": "C:\\Users\\salih\\Desktop\\ceng382\\Ceng382_25-26_202111034\\lab5\\lab5.csproj",
+      "packagesPath": "C:\\Users\\salih\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\salih\\Desktop\\ceng382\\Ceng382_25-26_202111034\\lab5\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/madscientist/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\salih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -68,7 +75,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
