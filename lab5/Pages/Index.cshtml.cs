@@ -6,57 +6,76 @@ namespace lab5.Pages
 {
     public class IndexModel : PageModel
     {
-        // Statik liste, uygulama çalıştığı sürece verileri saklar
-        public static List<ClassInformationModel> ClassList { get; set; } = new List<ClassInformationModel>();
+        private static List<ClassInformationModel> _classList = new();
+        private static int _nextId = 1;
 
         [BindProperty]
-        public ClassInformationModel ClassInfo { get; set; } = new();
+        public ClassInformationModel NewClass { get; set; } = new();
 
-        public void OnGet() { }
+        [BindProperty]
+        public bool IsEditing { get; set; }
+
+        [BindProperty]
+        public int EditId { get; set; }
+
+        public List<ClassInformationModel> ClassList => _classList;
+
+        public void OnGet()
+        {
+        }
 
         public IActionResult OnPostAdd()
         {
             if (!ModelState.IsValid)
                 return Page();
 
-            // Otomatik artan ID
-            ClassInfo.Id = ClassList.Count > 0 ? ClassList.Max(c => c.Id) + 1 : 1;
-            ClassList.Add(ClassInfo);
-            return RedirectToPage();
-        }
-
-        public IActionResult OnPostDelete(int id)
-        {
-            var item = ClassList.FirstOrDefault(c => c.Id == id);
-            if (item != null)
-                ClassList.Remove(item);
-
+            NewClass.Id = _nextId++;
+            _classList.Add(NewClass);
             return RedirectToPage();
         }
 
         public IActionResult OnPostEdit(int id)
         {
-            var item = ClassList.FirstOrDefault(c => c.Id == id);
-            if (item != null)
-                ClassInfo = new ClassInformationModel
-                {
-                    Id = item.Id,
-                    ClassName = item.ClassName,
-                    StudentCount = item.StudentCount,
-                    Description = item.Description
-                };
+            var item = _classList.FirstOrDefault(x => x.Id == id);
+            if (item == null)
+                return RedirectToPage();
+
+            NewClass = new ClassInformationModel
+            {
+                Id = item.Id,
+                ClassName = item.ClassName,
+                StudentCount = item.StudentCount,
+                Description = item.Description
+            };
+
+            IsEditing = true;
+            EditId = id;
+
             return Page();
         }
 
         public IActionResult OnPostUpdate()
         {
-            var item = ClassList.FirstOrDefault(c => c.Id == ClassInfo.Id);
+            if (!ModelState.IsValid)
+                return Page();
+
+            var item = _classList.FirstOrDefault(x => x.Id == EditId);
+            if (item == null)
+                return RedirectToPage();
+
+            item.ClassName = NewClass.ClassName;
+            item.StudentCount = NewClass.StudentCount;
+            item.Description = NewClass.Description;
+
+            return RedirectToPage();
+        }
+
+        public IActionResult OnPostDelete(int id)
+        {
+            var item = _classList.FirstOrDefault(x => x.Id == id);
             if (item != null)
-            {
-                item.ClassName = ClassInfo.ClassName;
-                item.StudentCount = ClassInfo.StudentCount;
-                item.Description = ClassInfo.Description;
-            }
+                _classList.Remove(item);
+
             return RedirectToPage();
         }
     }
