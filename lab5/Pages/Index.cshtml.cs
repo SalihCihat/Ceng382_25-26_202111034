@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using lab5.Models;
+using lab5.Helpers;
+using System.Text;
 
 namespace lab5.Pages
 {
@@ -24,6 +26,9 @@ namespace lab5.Pages
         [BindProperty(SupportsGet = true)]
         public int PageNumber { get; set; } = 1;
 
+        [BindProperty(SupportsGet = true)]
+        public List<string> SelectedColumns { get; set; } = new();
+
         public int PageSize { get; set; } = 10;
         public int TotalPages { get; set; }
 
@@ -31,10 +36,9 @@ namespace lab5.Pages
 
         public void OnGet()
         {
-            // Populate class list with 100 dummy data if it's empty
             if (_classList.Count == 0)
             {
-                for (int i = _classList.Count; i < 100; i++)
+                for (int i = 0; i < 100; i++)
                 {
                     _classList.Add(new ClassInformationModel
                     {
@@ -73,16 +77,13 @@ namespace lab5.Pages
 
             NewClass.Id = _nextId++;
             _classList.Add(NewClass);
-
-            // After adding, reload the page to show the updated list
             return RedirectToPage();
         }
 
         public IActionResult OnPostEdit(int id)
         {
             var item = _classList.FirstOrDefault(x => x.Id == id);
-            if (item == null)
-                return RedirectToPage();
+            if (item == null) return RedirectToPage();
 
             NewClass = new ClassInformationModel
             {
@@ -100,12 +101,10 @@ namespace lab5.Pages
 
         public IActionResult OnPostUpdate()
         {
-            if (!ModelState.IsValid)
-                return Page();
+            if (!ModelState.IsValid) return Page();
 
             var item = _classList.FirstOrDefault(x => x.Id == EditId);
-            if (item == null)
-                return RedirectToPage();
+            if (item == null) return RedirectToPage();
 
             item.ClassName = NewClass.ClassName;
             item.StudentCount = NewClass.StudentCount;
@@ -117,10 +116,23 @@ namespace lab5.Pages
         public IActionResult OnPostDelete(int id)
         {
             var item = _classList.FirstOrDefault(x => x.Id == id);
-            if (item != null)
-                _classList.Remove(item);
+            if (item != null) _classList.Remove(item);
 
             return RedirectToPage();
+        }
+
+        public IActionResult OnPostExport([FromForm] List<string> SelectedColumns)
+        {
+            var data = _classList;  // Filtrelenmiş veriyi değil, tüm veriyi kullan
+
+            // Eğer hiç kolon seçilmediyse → tüm kolonları ekle
+            if (SelectedColumns == null || SelectedColumns.Count == 0)
+            {
+                SelectedColumns = new List<string> { "ClassName", "StudentCount", "Description" };
+            }
+
+            string json = JsonExporter.Instance.ExportToJson(data, SelectedColumns);
+            return File(Encoding.UTF8.GetBytes(json), "application/json", "filtered_export.json");
         }
     }
 }

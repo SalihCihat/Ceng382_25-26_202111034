@@ -2,13 +2,30 @@
 @model lab5.Pages.IndexModel
 @{
     ViewData["Title"] = "Class Management";
+    var selected = Model.SelectedColumns ?? new List<string>();
+
+    string ToggleUrl(string column)
+    {
+        var updated = new List<string>(selected);
+        if (updated.Contains(column))
+            updated.Remove(column);
+        else
+            updated.Add(column);
+
+        var query = $"?SearchClassName={Model.SearchClassName}&PageNumber={Model.PageNumber}";
+        foreach (var col in updated)
+        {
+            query += $"&SelectedColumns={col}";
+        }
+        return query;
+    }
 }
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
 <div class="container mt-4">
     <div class="row">
-        <!-- Form (Left) -->
+        <!-- FORM -->
         <div class="col-md-4">
             <h4>@(Model.IsEditing ? "Edit Class" : "Add Class")</h4>
             <form method="post">
@@ -17,13 +34,11 @@
                 <div class="mb-3">
                     <label asp-for="NewClass.ClassName" class="form-label"></label>
                     <input asp-for="NewClass.ClassName" class="form-control" />
-                    <span asp-validation-for="NewClass.ClassName" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
                     <label asp-for="NewClass.StudentCount" class="form-label"></label>
                     <input asp-for="NewClass.StudentCount" class="form-control" />
-                    <span asp-validation-for="NewClass.StudentCount" class="text-danger"></span>
                 </div>
 
                 <div class="mb-3">
@@ -43,7 +58,7 @@
             </form>
         </div>
 
-        <!-- List (Right) -->
+        <!-- TABLO -->
         <div class="col-md-8">
             <h4>Class List</h4>
 
@@ -55,13 +70,27 @@
                 </div>
             </form>
 
-            <!-- Table -->
+            <!-- Export -->
+            <form method="post" asp-page-handler="Export">
+                @foreach (var col in selected)
+                {
+                    <input type="hidden" name="SelectedColumns" value="@col" />
+                }
+                <button type="submit" class="btn btn-success mb-2">Export Selected Columns</button>
+            </form>
+
             <table class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Class Name</th>
-                        <th>Student Count</th>
-                        <th>Description</th>
+                        <th class="@(selected.Contains("ClassName") ? "bg-info text-white" : "") text-center">
+                            <a href="@ToggleUrl("ClassName")" class="text-decoration-none">Class Name</a>
+                        </th>
+                        <th class="@(selected.Contains("StudentCount") ? "bg-info text-white" : "") text-center">
+                            <a href="@ToggleUrl("StudentCount")" class="text-decoration-none">Student Count</a>
+                        </th>
+                        <th class="@(selected.Contains("Description") ? "bg-info text-white" : "") text-center">
+                            <a href="@ToggleUrl("Description")" class="text-decoration-none">Description</a>
+                        </th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -91,7 +120,7 @@
                     @for (int i = 1; i <= Model.TotalPages; i++)
                     {
                         <li class="page-item @(i == Model.PageNumber ? "active" : "")">
-                            <a class="page-link" href="?SearchClassName=@Model.SearchClassName&PageNumber=@i">@i</a>
+                            <a class="page-link" href="?SearchClassName=@Model.SearchClassName&PageNumber=@i@string.Join("", Model.SelectedColumns.Select(c => $"&SelectedColumns={c}"))">@i</a>
                         </li>
                     }
                 </ul>

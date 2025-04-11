@@ -64,6 +64,38 @@ C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/ref
 C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/lab5.pdb
 C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/lab5.genruntimeconfig.cache
 C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/ref/lab5.dll
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/8v3fg1wloa-t1cqhe9u97.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/wcfe52xzpd-sejl45xvog.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/quhv8azirj-xvp3kq03qx.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/3fb94092ir-22vffe00uq.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/cn2658hcah-qesaa3a1fm.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/fzjw391l9g-tmc1g35s3z.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/7cbw1csafs-rxsg74s51o.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/0p2g6790fm-q9ht133ko3.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/x46o26hkre-gye83jo8yx.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/x921lnc7k9-wl58j5mj3v.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/407sflv47w-d4r6k3f320.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/878qjboqr4-keugtjm085.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/tm0xna2qmk-zub09dkrxp.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/h2d91l056a-43atpzeawx.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/a29bprj7gs-ynyaa8k90p.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/drn25zo6kf-c63t5i9ira.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/wvna6vsqtt-4094rpi4f9.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/778xli0h7d-hd3gran6i8.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/6nzfzh2vc5-ltid2c489k.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/pmzcshd39a-8vyfqsqgz1.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/3ssnrtow6s-u9q1upor1n.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/fsxbgw2wi3-4d85u1mtcx.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/ph9ca9payt-03hjc8e09r.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/2zut9zqvky-48y08845bh.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/rdw9xhiic4-worgj0nhwm.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/psv7iceb9h-gk0pw8i4co.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/zgkyftfic7-d6nrnj6jjx.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/eujr99gqni-m9qm4tazc0.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/73isv69qii-jjsuc0puko.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/02169cq71k-9vr69e8ynj.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/xumcqd5q4v-279325tonn.gz
+C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/judd9e1uxw-279325tonn.gz
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/bin/Debug/net9.0/appsettings.Development.json
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/bin/Debug/net9.0/appsettings.json
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/bin/Debug/net9.0/lab5.staticwebassets.runtime.json
@@ -84,7 +116,6 @@ C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/ref
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/scopedcss/bundle/lab5.styles.css
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/scopedcss/projectbundle/lab5.bundle.scp.css
-/home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/t7fmjts0yn-lugek5hnai.gz
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/h0kc3eeop1-61n19gt1b8.gz
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/h4zfvaox1x-fr7q2aak1r.gz
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/8v3fg1wloa-bqjiyaj88i.gz
@@ -162,101 +193,4 @@ C:/Users/salih/Desktop/ceng382/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/ref
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/lab5.pdb
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/lab5.genruntimeconfig.cache
 /home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/ref/lab5.dll
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\appsettings.Development.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\appsettings.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.staticwebassets.runtime.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.staticwebassets.endpoints.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.exe
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.deps.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.runtimeconfig.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.dll
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\bin\Debug\net9.0\lab5.pdb
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.AssemblyInfoInputs.cache
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.AssemblyInfo.cs
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.csproj.CoreCompileInputs.cache
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.RazorAssemblyInfo.cache
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.RazorAssemblyInfo.cs
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.sourcelink.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\scopedcss\bundle\lab5.styles.css
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\scopedcss\projectbundle\lab5.bundle.scp.css
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\t7fmjts0yn-b9sayid5wm.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\h0kc3eeop1-61n19gt1b8.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\h4zfvaox1x-xtxxf3hu2r.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\8v3fg1wloa-t1cqhe9u97.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\vjyqecrh7w-c2jlpeoesf.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\wcfe52xzpd-sejl45xvog.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\477kfeketh-aexeepp0ev.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\quhv8azirj-xvp3kq03qx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\ouuish1pkw-ausgxo2sd3.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\3fb94092ir-22vffe00uq.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\5pdybdvdqp-cosvhxvwiu.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\cn2658hcah-qesaa3a1fm.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\kv6cib4id6-fvhpjtyr6v.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\fzjw391l9g-tmc1g35s3z.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\2vyarc5sdl-fsbi9cje9m.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\7cbw1csafs-rxsg74s51o.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\ftsiiw7dvr-ee0r1s7dh0.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\0p2g6790fm-q9ht133ko3.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\6si3rwa0ms-jd9uben2k1.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\x46o26hkre-gye83jo8yx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\c0kpbqdy3w-r4e9w2rdcm.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\x921lnc7k9-wl58j5mj3v.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\hn8s9vgx5w-c2oey78nd0.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\407sflv47w-d4r6k3f320.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\p3dwznozl9-j5mq2jizvt.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\878qjboqr4-keugtjm085.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\mul1yzu1hi-nvvlpmu67g.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\tm0xna2qmk-zub09dkrxp.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\mt498jwqb5-pj5nd1wqec.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\h2d91l056a-43atpzeawx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\nnt0ucl1yr-v0zj4ognzu.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\a29bprj7gs-ynyaa8k90p.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\f8ii68ymic-hrwsygsryq.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\drn25zo6kf-c63t5i9ira.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\xw8vh7iupy-ft3s53vfgj.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\wvna6vsqtt-4094rpi4f9.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\1f1t448xid-6pdc2jztkx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\778xli0h7d-hd3gran6i8.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\f7x3pb7tgk-iovd86k7lj.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\6nzfzh2vc5-ltid2c489k.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\r5uikvvx98-kbrnm935zg.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\pmzcshd39a-8vyfqsqgz1.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\2wj0m4k1l1-y7v9cxd14o.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\3ssnrtow6s-u9q1upor1n.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\wc785jl604-h1s4sie4z3.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\fsxbgw2wi3-4d85u1mtcx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\etw3v5rshf-0j3bgjxly4.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\ph9ca9payt-03hjc8e09r.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\2zut9zqvky-48y08845bh.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\33qpf2qt1i-356vix0kms.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\t6ccya4lt7-83jwlth58m.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\5vhhkgh4h6-mrlpezrjn3.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\rdw9xhiic4-worgj0nhwm.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\psv7iceb9h-gk0pw8i4co.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\3vac3la8zb-x0q3zqp4vz.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\zgkyftfic7-d6nrnj6jjx.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\eujr99gqni-m9qm4tazc0.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\02bio24cno-ttgo8qnofa.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\73isv69qii-jjsuc0puko.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\02169cq71k-9vr69e8ynj.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\qjgzupkdvs-87fc7y1x7t.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\yoa43pznf2-mlv21k5csn.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\xumcqd5q4v-279325tonn.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\compressed\judd9e1uxw-279325tonn.gz
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets.build.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets.development.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets\msbuild.lab5.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets\msbuild.lab5.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets\msbuild.build.lab5.props
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.lab5.props
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.lab5.props
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\staticwebassets.pack.json
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.dll
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\refint\lab5.dll
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.pdb
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\lab5.genruntimeconfig.cache
-C:\Users\salih\Desktop\ceng382\Ceng382_25-26_202111034\lab5\obj\Debug\net9.0\ref\lab5.dll
+/home/madscientist/Masaüstü/github repolarim/ceng382lab/Ceng382_25-26_202111034/lab5/obj/Debug/net9.0/compressed/t7fmjts0yn-batojqmpoa.gz
