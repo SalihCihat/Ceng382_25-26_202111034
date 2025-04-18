@@ -1,0 +1,10 @@
+@page
+@model lab5.Pages.TableModel
+
+@{
+    ViewData["Title"] = "Table";
+}
+
+<h2>Welcome, @Model.Username!</h2>
+<p>This is a protected page.</p>
+<a asp-page="/Logout">Logout</a>
